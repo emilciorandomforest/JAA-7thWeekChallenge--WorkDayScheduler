@@ -27,6 +27,8 @@ header {
 }
 
 .time-block {
+  display: flex;
+  flex-direction: row;
   text-align: center;
   border-radius: 15px;
 }
