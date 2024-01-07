@@ -25,6 +25,8 @@ header {
 .container {
   display: flex;
   flex-direction: row;
+
+  width: 80%vw;
 }
 
 .description {
@@ -37,7 +39,6 @@ header {
 }
 
 .row {
-flex: row;
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
