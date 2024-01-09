@@ -1,11 +1,11 @@
 const currentDay = dayjs().format('MM DD YYYY');
 
 $('#todaysDate').text(currentDay);
-const saveBtn = document.getElementByClassName('save-btn');
+const saveBtn = document.getElementsByClassName('save-btn');
 
 
 
-saveBtn.addEventListener('click', function () {
+saveBtn.addEventListener('click', function() {
     //Code to save data goes here
     console.log('Data saved!');
 });
