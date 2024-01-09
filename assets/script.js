@@ -5,30 +5,31 @@ const saveBtn = document.getElementsByClassName('save-btn');
 
 
 
-saveBtn.addEventListener('click', function() {
-    //Code to save data goes here
-    console.log('Data saved!');
-});
+//saveBtn.addEventListener('click', function() {
+//    //Code to save data goes here
+//    console.log('Data saved!');
+//});
 
-
+localStorage.setItem("9 AM", "None");
+localStorage.getItem("9 AM");
+console.log(`${localStorage.getItem("9 AM")}`);
 
 const currentTime = dayjs().format('HH');
-
 const t = currentTime;
 
-const rowColor = document.getElementsByClassName("row").style.backgroundColor;
+const rowColor = document.getElementsByClassName("row");
 
-const present = document.getElementsByClassName("present").style.backgroundColor;
-const past = document.getElementsByClassName("past").style.backgroundColor;
-const future = document.getElementsByClassName("future").style.backgroundColor;
+const present = document.getElementsByClassName("present");
+const past = document.getElementsByClassName("past");
+const future = document.getElementsByClassName("future");
 
 function changeColor () {
     if (t < 12) {
-        rowColor = present;
+        rowColor.style.backgroundColor = present;
     } else if (t < 20) {
-        rowColor = past;
+        rowColor.style.backgroundColor = past;
     } else {
-        rowColor = future;
+        rowColor.style.backgroundColor = future;
     }   
 }
 
