@@ -1,9 +1,18 @@
 const currentDay = dayjs().format('MM DD YYYY');
 
 $('#todaysDate').text(currentDay);
+
 const saveBtn = document.getElementsByClassName('save-btn');
 
+//function save () {
+//    localStorage.getItem("9 AM").value;
+//    console.log(`${localStorage.getItem("9 AM").value}`) 
+//}
 
+saveBtn.addEventListener("click", function () {
+    localStorage.getItem("9 AM").value;
+    console.log(`${localStorage.getItem("9 AM").value}`) 
+});
 
 //saveBtn.addEventListener('click', function() {
 //    //Code to save data goes here
