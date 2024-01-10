@@ -4,20 +4,21 @@ $('#todaysDate').text(currentDay);
 
 const saveBtn = document.getElementsByClassName('save-btn');
 
+saveBtn.addEventListener("click", myFunction);
+
+function myFunction() {
+    alert ("Hello World!");
+};
+
 //function save () {
 //    localStorage.getItem("9 AM").value;
 //    console.log(`${localStorage.getItem("9 AM").value}`) 
 //}
 
-saveBtn.addEventListener("click", function () {
-    localStorage.getItem("9 AM").value;
-    console.log(`${localStorage.getItem("9 AM").value}`) 
-});
-
-//saveBtn.addEventListener('click', function() {
-//    //Code to save data goes here
-//    console.log('Data saved!');
-//});
+// Create a new "Date" object
+var now = new Date();
+let time = now.getHours();
+console.log(now.getHours())
 
 localStorage.setItem("9 AM", "None");
 localStorage.getItem("9 AM");
