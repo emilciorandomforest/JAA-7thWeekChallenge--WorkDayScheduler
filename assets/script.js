@@ -2,13 +2,15 @@ const currentDay = dayjs().format('MM DD YYYY');
 
 $('#todaysDate').text(currentDay);
 
-const saveBtn = document.getElementsByClassName('save-btn');
+const saveBtn = document.getElementsByClassName('saveBtn');
 
-saveBtn.addEventListener("click", myFunction);
+for (let i = 0; i < saveBtn.length; i++) {
+    saveBtn[0].addEventListener("click", myFunction) 
 
 function myFunction() {
     alert ("Hello World!");
 };
+}
 
 //function save () {
 //    localStorage.getItem("9 AM").value;
